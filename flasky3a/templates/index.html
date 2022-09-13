@@ -1,0 +1,8 @@
+{% if name %}
+    <h1>Hello {{ session['name'] }}!</h1>
+    <p>It is {{ session['temp'] }} degrees out!</p>
+    <p>Here is the forecast: </p>
+    {{ session['forecast'] }}
+{% else %}}
+    <h1>Hello World!</h1>
+{% endif %}}
